@@ -32,4 +32,9 @@ putenv('LOG_CHANNEL=stderr');
 putenv('SESSION_DRIVER=cookie');
 putenv('CACHE_STORE=array');
 
-require __DIR__ . '/../public/index.php';
+try {
+    require __DIR__ . '/../public/index.php';
+} catch (\Throwable $e) {
+    http_response_code(500);
+    echo "<pre style='padding:20px;background:#1a1a1a;color:#ff6b6b;font-family:monospace;white-space:pre-wrap;'><b>Entrypoint Exception:</b> " . htmlspecialchars($e->getMessage()) . "\n\n<b>File:</b> " . htmlspecialchars($e->getFile()) . ":" . $e->getLine() . "\n\n<b>Trace:</b>\n" . htmlspecialchars($e->getTraceAsString()) . "</pre>";
+}
