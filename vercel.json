@@ -11,8 +11,17 @@
     { "src": "/(.*)", "dest": "/api/index.php" }
   ],
   "env": {
+    "APP_NAME": "CV. Srikandi Keris Barokah",
     "APP_ENV": "production",
-    "APP_DEBUG": "true",
+    "APP_DEBUG": "false",
+    "APP_KEY": "base64:jmdAOdY0C1GhNeDNN7urInVbuUHCNUl8CMUQu7FHof8=",
+    "DB_CONNECTION": "pgsql",
+    "DB_HOST": "ep-summer-lab-azyb3pc3.c-3.ap-southeast-1.aws.neon.tech;options='endpoint=ep-summer-lab-azyb3pc3'",
+    "DB_PORT": "5432",
+    "DB_DATABASE": "neondb",
+    "DB_USERNAME": "neondb_owner",
+    "DB_PASSWORD": "npg_EWl5R1GbPudp",
+    "DB_SSLMODE": "require",
     "APP_CONFIG_CACHE": "/tmp/storage/framework/cache/config.php",
     "APP_EVENTS_CACHE": "/tmp/storage/framework/cache/events.php",
     "APP_PACKAGES_CACHE": "/tmp/storage/framework/cache/packages.php",
