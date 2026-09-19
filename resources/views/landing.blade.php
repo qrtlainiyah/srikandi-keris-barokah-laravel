@@ -83,7 +83,7 @@
                 <div class="badge-gold">
                     <i class="fas fa-gem"></i> Solusi Terpadu & Tepercaya
                 </div>
-                <h1 class="hero-title">Integritas Pelayanan untuk Hidup Sehat, Berkah & Sukses</h1>
+                <h1 class="hero-title">Integritas Pelayanan untuk <span class="text-gold-gradient">Hidup Sehat, Berkah & Sukses</span></h1>
                 <p class="hero-subtitle">Kami menyediakan berbagai kebutuhan hidup Anda dalam satu wadah terpercaya. Mulai dari kesehatan alami, literasi buku bermanfaat, bimbingan perjalanan suci haji & umroh, kecantikan skincare herbal, hingga investasi properti masa depan Anda.</p>
                 <div class="hero-buttons">
                     <a href="#produk" class="btn btn-gold btn-lg">Lihat Semua Produk <i class="fas fa-arrow-right"></i></a>
