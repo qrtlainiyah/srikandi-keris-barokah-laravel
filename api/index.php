@@ -31,6 +31,8 @@ putenv('APP_SERVICES_CACHE=/tmp/storage/framework/cache/services.php');
 putenv('LOG_CHANNEL=stderr');
 putenv('SESSION_DRIVER=cookie');
 putenv('CACHE_STORE=array');
+putenv('APP_MAINTENANCE_DRIVER=file');
+putenv('APP_MAINTENANCE_STORE=array');
 
 try {
     require __DIR__ . '/../public/index.php';
