@@ -29,5 +29,7 @@ putenv('APP_PACKAGES_CACHE=/tmp/storage/framework/cache/packages.php');
 putenv('APP_ROUTES_CACHE=/tmp/storage/framework/cache/routes.php');
 putenv('APP_SERVICES_CACHE=/tmp/storage/framework/cache/services.php');
 putenv('LOG_CHANNEL=stderr');
+putenv('SESSION_DRIVER=cookie');
+putenv('CACHE_STORE=array');
 
 require __DIR__ . '/../public/index.php';
