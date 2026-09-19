@@ -18,4 +18,16 @@ foreach ($dirs as $dir) {
     }
 }
 
+if (!file_exists('/tmp/storage/logs/laravel.log')) {
+    @touch('/tmp/storage/logs/laravel.log');
+}
+
+putenv('VIEW_COMPILED_PATH=/tmp/storage/framework/views');
+putenv('APP_CONFIG_CACHE=/tmp/storage/framework/cache/config.php');
+putenv('APP_EVENTS_CACHE=/tmp/storage/framework/cache/events.php');
+putenv('APP_PACKAGES_CACHE=/tmp/storage/framework/cache/packages.php');
+putenv('APP_ROUTES_CACHE=/tmp/storage/framework/cache/routes.php');
+putenv('APP_SERVICES_CACHE=/tmp/storage/framework/cache/services.php');
+putenv('LOG_CHANNEL=stderr');
+
 require __DIR__ . '/../public/index.php';
